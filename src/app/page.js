@@ -6,13 +6,9 @@ import profileLifestyle from "../asset/bioimage2.jpeg";
 import styles from "./biodata.module.css";
 
 export default function BiodataPage() {
-  const handlePrint = () => window.print();
 
   return (
     <div className={styles.wrapper}>
-      <button className={`${styles.printBtn} print-btn`} onClick={handlePrint}>
-        <span>🖨</span> Print
-      </button>
 
       <div className={`${styles.card} biodata-card`}>
 
