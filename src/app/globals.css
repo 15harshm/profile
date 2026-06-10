@@ -1,0 +1,79 @@
+/* ============================================================
+   GLOBALS — Harsh Mandaliya Biodata
+   Design system: Burgundy + Rose Gold + Ivory palette
+   ============================================================ */
+
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+:root {
+  /* Palette — Burgundy Elegance */
+  --navy:        #4a1728;
+  --navy-mid:    #5c2035;
+  --navy-light:  #6e2a42;
+  --gold:        #b8895a;
+  --gold-light:  #d4a876;
+  --gold-muted:  rgba(184, 137, 90, 0.15);
+  --cream:       #fdf7f0;
+  --cream-dark:  #f3e8da;
+  --white:       #ffffff;
+  --text-dark:   #2d1a10;
+  --text-mid:    #5a3d30;
+  --text-light:  #9a7060;
+  --border:      rgba(184, 137, 90, 0.3);
+
+  /* Fonts */
+  --font-heading: var(--font-playfair), 'Georgia', serif;
+  --font-body:    var(--font-outfit), 'Segoe UI', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #ede0d4;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  html, body {
+    background: none !important;
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .print-btn {
+    display: none !important;
+  }
+
+  .biodata-wrapper {
+    padding: 0 !important;
+    background: none !important;
+    display: block !important;
+  }
+
+  .biodata-card {
+    width: 210mm !important;
+    height: 297mm !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

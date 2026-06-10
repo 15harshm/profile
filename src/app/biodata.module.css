@@ -1,0 +1,331 @@
+/* ============================================================
+   BIODATA — Single Column Layout
+   Burgundy + Rose Gold + Ivory palette
+   ============================================================ */
+
+/* ── Page wrapper ── */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e8d5c8 0%, #ede0d4 50%, #e0cfc4 100%);
+}
+
+/* ── Print button ── */
+.printBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  background: var(--navy);
+  color: var(--gold-light);
+  border: 1.5px solid var(--gold);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 16px rgba(74, 23, 40, 0.25);
+}
+.printBtn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* ── A4 Card ── */
+.card {
+  width: 620px;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(74, 23, 40, 0.2),
+    0 6px 20px rgba(74, 23, 40, 0.1);
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 32px 40px 24px;
+  background: var(--navy);
+}
+
+.monogram {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: rgba(184, 137, 90, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  flex-shrink: 0;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.headerRule {
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+}
+
+/* ── Sections ── */
+.section {
+  padding: 24px 40px;
+}
+
+.sectionTitle {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sectionTitle::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── Details ── */
+.detailsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailRow {
+  display: flex;
+  align-items: baseline;
+}
+
+.detailLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-light);
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.detailValue {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  flex: 1;
+  border-bottom: 1px dashed var(--cream-dark);
+  padding-bottom: 2px;
+}
+
+/* ── Dividers ── */
+.rule {
+  height: 1px;
+  margin: 0 40px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── Family ── */
+.familyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.familyCard {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 16px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  box-shadow: 0 1px 4px rgba(74, 23, 40, 0.07);
+}
+
+.familyRole {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.familyRelation {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── Photos side by side ── */
+.photosRow {
+  display: flex;
+  gap: 12px;
+  padding: 24px 40px;
+}
+
+.photoFrame {
+  flex: 1;
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--border);
+  box-shadow: 0 4px 16px rgba(74, 23, 40, 0.12);
+}
+
+/* ── Footer ── */
+.footer {
+  padding: 16px 40px 24px;
+  background: var(--cream);
+  border-top: 1px solid var(--cream-dark);
+  text-align: center;
+}
+
+.footerLine {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  margin: 0 auto 10px;
+}
+
+.footerText {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--text-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footerLink:hover {
+  color: var(--gold);
+}
+
+.dot {
+  color: var(--text-light);
+}
+
+/* ── Print ── */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm 14mm;
+  }
+
+  html, body {
+    width: 210mm;
+    background: none !important;
+  }
+
+  .printBtn {
+    display: none !important;
+  }
+
+  .wrapper {
+    padding: 0;
+    background: none !important;
+    min-height: unset;
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    /* Scale all pixel values proportionally to A4 */
+    font-size: 90%;
+  }
+
+  /* Let photos grow to fill available width */
+  .photosRow {
+    padding: 20px 30px;
+    gap: 10px;
+  }
+
+  .photoFrame {
+    aspect-ratio: 3 / 4;
+    border-radius: 6px;
+  }
+
+  .header {
+    padding: 24px 30px 20px;
+  }
+
+  .section {
+    padding: 18px 30px;
+  }
+
+  .rule {
+    margin: 0 30px;
+  }
+
+  .footer {
+    padding: 12px 30px 20px;
+  }
+}
