@@ -15,7 +15,7 @@ const outfit = Outfit({
 
 export const metadata = {
   title: "Harsh Mandaliya — Biodata",
-  description: "Personal biodata of Harsh Mandaliya, Full Stack Developer based in Rajkot, Gujarat.",
+  description: "Personal biodata of Harsh Mandaliya, Software Engineer based in Rajkot, Gujarat.",
 };
 
 export default function RootLayout({ children }) {

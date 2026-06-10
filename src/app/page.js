@@ -17,7 +17,7 @@ export default function BiodataPage() {
           <div className={styles.monogram}>HM</div>
           <div className={styles.headerText}>
             <h1 className={styles.name}>Harsh Mandaliya</h1>
-            <p className={styles.title}>Full Stack Developer</p>
+            <p className={styles.title}>Software Engineer</p>
           </div>
         </header>
 
@@ -31,7 +31,7 @@ export default function BiodataPage() {
           <div className={styles.detailsGrid}>
             {[
               { label: "Full Name",   value: "Harsh Mandaliya" },
-              { label: "Profession",  value: "Full Stack Developer" },
+              { label: "Profession",  value: "Software Engineer" },
               { label: "Location",    value: "Rajkot, Gujarat, India" },
               { label: "Height",      value: "169 cm  (5′6½″)" },
             ].map(({ label, value }) => (
@@ -40,6 +40,25 @@ export default function BiodataPage() {
                 <span className={styles.detailValue}>{value}</span>
               </div>
             ))}
+          </div>
+        </section>
+
+        <div className={styles.rule} />
+
+        {/* ── EDUCATION ── */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>
+            <span>Education</span>
+          </h2>
+          <div className={styles.detailsGrid}>
+            <div className={styles.detailRow}>
+              <span className={styles.detailLabel}>Degree</span>
+              <span className={styles.detailValue}>MCA (Master of Computer Applications)</span>
+            </div>
+            <div className={styles.detailRow}>
+              <span className={styles.detailLabel}>University</span>
+              <span className={styles.detailValue}>Parul University</span>
+            </div>
           </div>
         </section>
 
