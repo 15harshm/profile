@@ -31,7 +31,8 @@ export default function BiodataPage() {
           <div className={styles.detailsGrid}>
             {[
               { label: "Full Name",   value: "Harsh Mandaliya" },
-              { label: "Profession",  value: "Software Engineer" },
+              { label: "Date of Birth", value: "15 March 2003" },
+              { label: "Profession",    value: "Software Engineer" },
               { label: "Location",    value: "Rajkot, Gujarat, India" },
               { label: "Height",      value: "169 cm  (5′6½″)" },
             ].map(({ label, value }) => (
@@ -53,7 +54,7 @@ export default function BiodataPage() {
           <div className={styles.detailsGrid}>
             <div className={styles.detailRow}>
               <span className={styles.detailLabel}>Degree</span>
-              <span className={styles.detailValue}>MCA (Master of Computer Applications)</span>
+              <span className={styles.detailValue}>MCA — Pursuing</span>
             </div>
             <div className={styles.detailRow}>
               <span className={styles.detailLabel}>University</span>
